@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: gowebapi 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gowebapi
+  template:
+    metadata:
+      labels:
+        app: gowebapi 
+    spec:
+      containers:
+        - name: gowebapi 
+          image: interviewprep.azurecr.io/gowebapi
+          ports:
+          - containerPort: 8080
