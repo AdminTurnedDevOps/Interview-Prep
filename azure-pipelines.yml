@@ -48,8 +48,8 @@ stages:
             inputs:
               action: deploy
               manifests: |
-                manifests/deployment.yml
-                manifests/service.yml
+                /manifests/deployment.yml
+                /manifests/service.yml
               imagePullSecrets: |
                 $(imagePullSecret)
               containers: |
