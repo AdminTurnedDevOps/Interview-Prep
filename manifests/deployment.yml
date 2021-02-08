@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: gowebapi 
-          image: interviewprep.azurecr.io/gowebapi
+          image: interviewprep92.azurecr.io/gowebapi
           ports:
           - containerPort: 8080
